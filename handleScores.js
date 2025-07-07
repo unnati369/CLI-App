@@ -1,4 +1,4 @@
-const fs = require("fs")
+import fs from "fs";
 const getScore = () =>{
     try{
         const data = fs.readFileSync("scores.json","utf8")
@@ -17,11 +17,10 @@ const showLeaderBoard = () =>{
         console.log(`${index+1}. ${item.name} - ${item.score} at ${item.time}`)
     })
 }
-const addScore = (username,score) =>{
+export const addScore = (username,score) =>{
     const scores = getScore()
     scores.push({name: username, score: score, time: new Date().toLocaleDateString()})
     updateScore(scores)
     showLeaderBoard()
 }
 
-module.exports = {addScore,getScore,updateScore}

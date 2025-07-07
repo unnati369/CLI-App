@@ -1,5 +1,9 @@
 {
+  "name": "blackpink-quiz",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
+    "chalk": "^5.4.1",
     "readline-sync": "^1.4.10"
   }
 }
