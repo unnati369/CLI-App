@@ -9,4 +9,4 @@ A fun CLI quiz about BLACKPINK made using Node.js.
 
 ## How to Run
 ```bash
-node quiz.js
+node script.js
